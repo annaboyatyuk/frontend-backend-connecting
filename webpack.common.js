@@ -25,6 +25,7 @@ webpackConfig.plugins = [
   new DefinePlugin({
     'process.env': {
       API_URL: JSON.stringify(process.env.API_URL),
+      USER_API_URL: JSON.stringify(process.env.USER_API_URL),
     },
     PRODUCTION: production,
   }),
